@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    margin-top: 180px;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-image: linear-gradient(180deg,#180f4a,#090422,black);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Garante que o navbar fique na frente */
+    top: 0;
+}
+
+.logo{
+    flex: 10%;
+    margin-left: 5%;
+    /* border: 1px solid red;  */
+    text-align: left;
+}
+
+.logo h1{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-size: 26px;
+}
+
+.menu{
+    flex: 75%;
+    /* border: 1px solid green; */
+    text-align: center;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+    margin-right: 5%;
+}
+
+.menu a:hover{
+    color: #FF2978;
+    border-top: 4px solid #180f4a ;
+}
+
+#botao{
+    background-color: #180f4a;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 1%;
+    /* margin-left: 2%; */
+    
+}
+
+#botao:hover{
+    border: none;
+    background-color: #FF2978;
+}
+
+/* Parte de Baixo do Navbar */
+
+.h1{
+    color: black;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+b{
+    font-size: 22px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Parte do Footer */
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin-top: 100px;
+    height: 300px;
+    background-image: linear-gradient(180deg,#180f4a,#090422,black);
+    text-align: center;
+    border-top: 5px solid #FF2978;
+}
+
+.logo-rodape{
+    padding: 60px;
+}
+
+.agencia{
+    font-family: "Lobster", serif;
+    color: white;
+    font-size: 34px; 
+}
+
+.whats{
+    position: fixed;
+    bottom: 5px;
+    right: 130px;
+    width: 100px;
+}
+
+
+.navegação{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.navegação a{
+    text-align: center;
+    justify-content: center;
+    border: 2px solid gray;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: gray;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 16px; 
+    color:aliceblue
+  
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: blue 
+}
