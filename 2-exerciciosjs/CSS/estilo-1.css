@@ -1,179 +1,728 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    text-align: center;
-    margin-top: 250px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  text-align: center;
+  margin-top: 250px;
 }
 
 .navbar {
-    display: flex;
-    flex-flow: row wrap;
-    height: 100px;
-    background-image: linear-gradient(180deg,#180f4a,#090422,black);
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1000; /* Garante que o navbar fique na frente */
-    top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  background-image: linear-gradient(180deg, #180f4a, #090422, black);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  /* Garante que o navbar fique na frente */
+  top: 0;
 }
 
-.logo{
-    flex: 10%;
-    margin-left: 5%;
-    /* border: 1px solid red;  */
-    text-align: left;
+.logo {
+  flex: 10%;
+  margin-left: 5%;
+  /* border: 1px solid red;  */
+  text-align: left;
 }
 
-.logo h1{
-    font-family:'Times New Roman', Times, serif;
-    color: white;
-    font-size: 26px;
+.logo h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 26px;
 }
 
-.menu{
-    flex: 75%;
-    /* border: 1px solid green; */
-    text-align: center;
-    padding: 20px;
-    font-family:'Times New Roman', Times, serif;
-    
+.menu {
+  flex: 75%;
+  /* border: 1px solid green; */
+  text-align: center;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
-.menu a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 16px;
-    margin-right: 5%;
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 16px;
+  margin-right: 5%;
 }
 
-.menu a:hover{
-    color: #FF2978;
-    border-top: 4px solid #180f4a ;
+.menu a:hover {
+  color: #FF2978;
+  border-top: 4px solid #180f4a;
 }
 
-#botao{
-    background-color: #180f4a;
-    padding: 10px 25px;
-    color: white;
-    border-radius: 5px;
-    margin-right: 1%;
-    /* margin-left: 2%; */
-    
+#botao {
+  background-color: #180f4a;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 1%;
+  /* margin-left: 2%; */
+
 }
 
-#botao:hover{
-    border: none;
-    background-color: #FF2978;
+#botao:hover {
+  border: none;
+  background-color: #FF2978;
 }
 
 /* Parte de Baixo do Navbar */
 
-.h1{
-    color: black;
-    font-size: 50px;
+.h1 {
+  color: black;
+  font-size: 50px;
 }
 
 h2 {
-    text-align: center;
-    font-size: 18px;
+  text-align: center;
+  font-size: 18px;
+  
 }
 
-b{
-    font-size: 22px;
+b {
+  font-size: 22px;
 }
 
 .input-container {
-    margin-bottom: 15px;
-    
+  margin-bottom: 15px;
+
 }
 
 input[type="text"],
 input[type="number"] {
-    padding: 8px;
-    width: 200px;
-    margin-right: 10px;
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
 }
 
 button {
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 /* Parte do Footer */
 
-footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin-top: 100px;
-    height: 300px;
-    background-image: linear-gradient(180deg,#180f4a,#090422,black);
-    text-align: center;
-    border-top: 5px solid #FF2978;
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-top: 100px;
+  height: 300px;
+  background-image: linear-gradient(180deg, #180f4a, #090422, black);
+  text-align: center;
+  border-top: 5px solid #FF2978;
 }
 
-.logo-rodape{
-    padding: 60px;
+.logo-rodape {
+  padding: 60px;
 }
 
-.agencia{
-    font-family: "Lobster", serif;
-    color: white;
-    font-size: 34px; 
+.agencia {
+  font-family: "Lobster", serif;
+  color: white;
+  font-size: 34px;
 }
 
-.whats{
-    position: fixed;
-    bottom: 5px;
-    right: 130px;
-    width: 100px;
+.whats {
+  position: fixed;
+  bottom: 5px;
+  right: 130px;
+  width: 100px;
 }
 
 
-.navegação{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.navegação {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 
 }
 
-.navegação a{
-    text-align: center;
-    justify-content: center;
-    border: 2px solid gray;
-    padding: 10px 15px 10px 15px;
-    border-radius: 10px;
-    background-color: gray;
-    font-weight: bold;
-    margin-top: 2%;
-    margin-bottom: 2%;
+.navegação a {
+  text-align: center;
+  justify-content: center;
+  border: 2px solid gray;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  background-color: gray;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 
 h1 {
-    text-align: center;
-    font-size: 16px; 
-    color:aliceblue
+  text-align: center;
+  font-size: 16px;
+  color: aliceblue
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue
+}
+
+@media screen and (max-width: 2400px) {
+
+  body {
+    margin-top: 180px;
+  }
+
+  .container {
+    left: 43%;
+
+  }
+
+  .h1{
+    margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 2250px) {
+
+  body {
+    margin-top: 160px;
+  }
+
+  .container {
+    left: 42%;
+
+  }
+}
+
+@media screen and (max-width: 2100px) {
+
+  body {
+    margin-top: 160px;
+  }
+
+  .container {
+    left: 42%;
+
+  }
+
   
 }
 
-a{
-    text-align: center;
-    text-decoration: none;
-    color: black;
+@media screen and (max-width: 1950px) {
+
+  body {
+    margin-top: 160px;
+  }
+
+  .container {
+    left: 41%;
+
+  }
 }
 
-a:hover{
-    text-decoration: none;
-    color: blue 
+@media screen and (max-width: 1950px) {
+
+  body {
+    margin-top: 160px;
+  }
+
+  .container {
+    left: 41%;
+
+  }
+}
+
+@media screen and (max-width: 1800px) {
+
+  body {
+    margin-top: 160px;
+  }
+
+  .container {
+    left: 41%;
+
+  }
+}
+
+@media screen and (max-width: 1650px) {
+
+  body {
+    margin-top: 160px;
+  }
+
+  .container {
+    left: 39%;
+
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+
+  body {
+    margin-top: 160px;
+  }
+
+  .container {
+    left: 39%;
+
+  }
+
+  
+}
+
+@media screen and (max-width: 1350px) {
+
+  body {
+    margin-top: 200px;
+  }
+
+  .container {
+    left: 37%;
+
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    /* Ajuste a altura para caber o conteúdo */
+  }
+
+  .logo {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    margin-left: 0;
+    /* Centraliza o logo */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Espaçamento entre o logo e o menu */
+  }
+
+  .menu {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    text-align: center;
+    /* Centraliza o menu */
+    padding: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    /* Garante que os links estejam centralizados */
+    padding: 10px 12px;
+    /* Ajuste de espaçamento para melhor visualização */
+  }
+
+  #botao {
+    background-color: #180f4a;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5%;
+    /* margin-left: 2%; */
+  }
+
+  
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  body {
+    margin-top: 200px;
+  }
+
+  .container {
+    left: 35%;
+
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    /* Ajuste a altura para caber o conteúdo */
+  }
+
+  .logo {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    margin-left: 0;
+    /* Centraliza o logo */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Espaçamento entre o logo e o menu */
+  }
+
+  .menu {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    text-align: center;
+    /* Centraliza o menu */
+    padding: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    /* Garante que os links estejam centralizados */
+    padding: 10px 12px;
+    /* Ajuste de espaçamento para melhor visualização */
+  }
+
+  #botao {
+    background-color: #180f4a;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5%;
+    /* margin-left: 2%; */
+  }
+
+  .h1{
+    margin-top: 330px;
+  }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+  body {
+    margin-top: 200px;
+  }
+
+  .container {
+    left: 33%;
+
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    /* Ajuste a altura para caber o conteúdo */
+  }
+
+  .logo {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    margin-left: 0;
+    /* Centraliza o logo */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Espaçamento entre o logo e o menu */
+  }
+
+  .menu {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    text-align: center;
+    /* Centraliza o menu */
+    padding: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    /* Garante que os links estejam centralizados */
+    padding: 10px 12px;
+    /* Ajuste de espaçamento para melhor visualização */
+  }
+
+  #botao {
+    background-color: #180f4a;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5%;
+    /* margin-left: 2%; */
+  }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+  body {
+    margin-top: 200px;
+  }
+
+  .container {
+    left: 31%;
+
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    /* Ajuste a altura para caber o conteúdo */
+  }
+
+  .logo {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    margin-left: 0;
+    /* Centraliza o logo */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Espaçamento entre o logo e o menu */
+  }
+
+  .menu {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    text-align: center;
+    /* Centraliza o menu */
+    padding: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    /* Garante que os links estejam centralizados */
+    padding: 10px 12px;
+    /* Ajuste de espaçamento para melhor visualização */
+  }
+
+  #botao {
+    background-color: #180f4a;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5%;
+    /* margin-left: 2%; */
+  }
+
+  .h1{
+    margin-top: 320px;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  body {
+    margin-top: 200px;
+  }
+
+  .container {
+    left: 28%;
+
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    /* Ajuste a altura para caber o conteúdo */
+  }
+
+  .logo {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    margin-left: 0;
+    /* Centraliza o logo */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Espaçamento entre o logo e o menu */
+  }
+
+  .menu {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    text-align: center;
+    /* Centraliza o menu */
+    padding: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    /* Garante que os links estejam centralizados */
+    padding: 10px 12px;
+    /* Ajuste de espaçamento para melhor visualização */
+  }
+
+  #botao {
+    background-color: #180f4a;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5%;
+    /* margin-left: 2%; */
+  }
+
+  .h1{
+    margin-top: 310px;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+  body {
+    margin-top: 200px;
+  }
+
+  .container {
+    left: 22%;
+
+  }
+
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    /* Ajuste a altura para caber o conteúdo */
+  }
+
+  .logo {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    margin-left: 0;
+    /* Centraliza o logo */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Espaçamento entre o logo e o menu */
+  }
+
+  .menu {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    text-align: center;
+    /* Centraliza o menu */
+    padding: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    /* Garante que os links estejam centralizados */
+    padding: 10px 12px;
+    /* Ajuste de espaçamento para melhor visualização */
+  }
+
+  #botao {
+    background-color: #180f4a;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5%;
+    /* margin-left: 2%; */
+  }
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+  body {
+    margin-top: 210px;
+  }
+
+  .container {
+    left: 16%;
+
+  }
+
+  .h1{
+    margin-top: 175px;
+ }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  body {
+    top: 40px;
+
+  }
+
+  footer {
+    position: relative;
+    height: 400px;
+    top: 80%;
+  }
+
+  #btVerificar,
+  #btAdicionar {
+    margin-top: 8px;
+  }
+
+
+  .h1 {
+    font-size: 25px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    /* Ajuste a altura para caber o conteúdo */
+  }
+
+  .logo {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    margin-left: 0;
+    /* Centraliza o logo */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Espaçamento entre o logo e o menu */
+  }
+
+  .menu {
+    flex: unset;
+    /* Remove a configuração de flex específica */
+    text-align: center;
+    /* Centraliza o menu */
+    padding: 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    /* Garante que os links estejam centralizados */
+    padding: 10px 12px;
+    /* Ajuste de espaçamento para melhor visualização */
+  }
+
+  #botao {
+    background-color: #180f4a;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5%;
+    /* margin-left: 2%; */
+  }
+
+  .h1{
+    margin-top: 175px;
+ }
+
 }
 

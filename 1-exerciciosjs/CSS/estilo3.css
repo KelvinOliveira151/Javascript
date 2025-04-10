@@ -184,7 +184,7 @@ a:hover {
   }
 
   .h1{
-    margin-top: 270px;
+    margin-top: 170px;
  }
 
 }
@@ -255,7 +255,7 @@ a:hover {
     margin-top: 180px;
 
   }
-
+  
 
 }
 
@@ -265,9 +265,7 @@ a:hover {
     margin-top: 160px;
   }
 
-  .h1{
-    margin-top: 310px;
- }
+  
 }
 
 @media screen and (max-width: 1350px) {
@@ -276,9 +274,8 @@ a:hover {
     margin-top: 200px;
   }
 
-  .container {
-    left: 37%;
-
+  .h1{
+     margin-top: 215px;
   }
 
   .navbar {
@@ -444,9 +441,8 @@ a:hover {
     margin-top: 200px;
   }
 
-  .container {
-    left: 31%;
-
+  .h1{
+    font-size: 40px;
   }
 
   .navbar {
